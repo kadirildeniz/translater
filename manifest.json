@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Çevirmen",
+  "version": "1.0",
+  "description": "PDF dosyalarını Türkçe'ye çevirip indirir",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://translate.googleapis.com/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*.pdf", "file:///*/*.pdf"],
+      "js": [
+        "lib/pdf.js",
+        "lib/jspdf.umd.min.js",
+        "content.js"
+      ],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["lib/*"],
+    "matches": ["<all_urls>"]
+  }]
+} 

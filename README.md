@@ -23,5 +23,3 @@ Bu Chrome eklentisi, PDF dosyalarını İngilizce'den Türkçe'ye çeviren basit
 1. Çevirmek istediğiniz PDF dosyasını Chrome'da açın
 2. Sağ üst köşede beliren "PDF'yi Türkçe'ye Çevir" butonuna tıklayın
 3. Çeviri işlemi tamamlandığında, çevrilen PDF otomatik olarak indirilecektir
-
-## Dosya Yapısı 
